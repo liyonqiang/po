@@ -1,0 +1,23 @@
+test_login:
+  test_login_001:
+    username: "18768307735"
+    password: "lyq19931017"
+    result: "true"
+
+  test_login_002:
+    username: "18768307735"
+    password: "lyq19931017.."
+    result: "false"
+    error_info: "用户名密码不匹配"
+
+  test_login_003:
+    username: ""
+    password: "lyq19931017.."
+    result: "false"
+    error_info: "用户名不能为空"
+
+  test_login_004:
+    username: "18768307735"
+    password: ""
+    result: "false"
+    error_info: "密码不能为空"
